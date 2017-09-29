@@ -67,7 +67,7 @@ int i = 0;
 int j = 0;
 std::cout << "enter x, y and z" << std::endl;
 std::cin >> h >> i >> j;
-if ((h % 5 == 0) && (i % 5 !=0) && (j % 5 = 0)) {
+if ((h % 5 == 0) && (i % 5 != 0) && (j % 5 = 0)) {
     ;
 } else if ((h%5 != 0) && (i%5 = 0) && (j%5 != 0)) {
     ;
@@ -95,6 +95,32 @@ std::cout << " the condition is true " << std::endl;
 else
 {
 std::cout << " the condition is false " << std::endl;
+}
+
+// 2.1;
+int o = 0;
+int p = 0;
+std::cout << "enter first figure's placing" << std::endl;
+std::cin >> o >> p;
+pair<int, int> firstFigure;
+firstFigure.first = o;
+firstFigure.second = p;
+
+int r = 0;
+int s = 0;
+std::cout << "enter second figure's placing" << std::endl;
+std::cin >> r >> s;
+pair<int, int> secondFigure;
+firstFigure.first = r;
+firstFigure.second = s;
+if ((firstFigure.first == secondFigure.first) || (firstFigure.second == secondFigure.second)) {
+    std::cout << "the rook threatens the playing field(c, d)" << std::endl; 
+}
+if ((abs(firstFigure.first - secondFigure.second) == (abs(firstFigure.second - secondFigure.second) == 1)) {
+    std::cout << "the bishop threatens the playing field(c, d)" << std::endl; 
+}
+if ((abs(firstFigure.first - secondFigure.second) == 1) || (abs(firstFigure.second - secondFigure.second) == 1)) {
+    std::cout << "the king can get to the playing field(c, d)" << std::endl; 
 }
 
 }
