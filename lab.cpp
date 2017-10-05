@@ -118,27 +118,27 @@ int main()
         std::cout << i << "*7 = " << 7*i << std::endl;
     }
     unsigned int count = 1;
-    for (int j = 8; j <= 15; ++j)
+    for (int i = 8; i <= 15; ++i)
     {
-    count = count * j;
+    count = count * i;
     }
     std::cout << count << std::endl;
     count = 1;
     std::cout << "enter a (1<a<20)" << std::endl;
     int a = 0;
     std::cin >> a;
-    for (int k = a; k <= 20; ++k)
+    for (int i = a; i <= 20; ++i)
     {
-        count = count * k;
+        count = count * i;
     }
     std::cout << count << std::endl;
     count = 1;
     std::cout << "enter b (1<b<20)" << std::endl;
     int numberB = 0;
     std::cin >> numberB;
-    for (int t = 1; t <= numberB; ++t)
+    for (int i = 1; i <= numberB; ++i)
     {
-         count = count * t;
+         count = count * i;
     }
     std::cout << count << std::endl;
     count = 1;
@@ -148,9 +148,9 @@ int main()
     std::cout << "enter b (b>=a)" << std::endl;
     int secondborderB = 0;
     std::cin >> secondborderB;
-    for (int q = firstborderA; q <= secondborderB; ++q)
+    for (int i = firstborderA; i <= secondborderB; ++i)
     {
-        count = count * q;
+        count = count * i;
     }
     std::cout << count << std::endl;
     return 0;
