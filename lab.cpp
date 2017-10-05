@@ -9,7 +9,7 @@ int main()
     int numberL = 0;
     int numberM = 0;
     std::cin >> numberK >> numberL >> numberM;
-    if ((numberK % 2 = 1) && (numberL % 2 = 1))
+    if ((numberK % 2 == 1) && (numberL % 2 == 1))
     {
         std::cout << " the condition is true " << std::endl;
     }
