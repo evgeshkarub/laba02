@@ -76,42 +76,42 @@ int main()
     }
     if (std::abs(b.first - c.first) == std::abs(b.second - c.second))
     {
-        std::cout << "Elephant threatens the field (c,d)" << std::endl;
+        std::cout << "elephant threatens the field (c,d)" << std::endl;
     }
     else
     {
-        std::cout << "Elephant  doesn`t threatens the field (c,d)" << std::endl;
+        std::cout << "elephant  doesn`t threatens the field (c,d)" << std::endl;
     }
     if (std::abs(b.first - c.first) ==  1 || std::abs(b.second - c.second) == 1)
     {
-        std::cout << "King threatens the field (c,d)" << std::endl;
+        std::cout << "king threatens the field (c,d)" << std::endl;
     }
     else
     {
-        std::cout << "King  doesn`t threatens the field (c,d)" << std::endl;
+        std::cout << "king  doesn`t threatens the field (c,d)" << std::endl;
     }
     if ((b.first == c.first) || (b.second == c.second) ||
         (std::abs(b.first - c.first) == std::abs(b.second - c.second)))
     {
-        std::cout << "Queen threatens the field (c,d)" << std::endl;
+        std::cout << "queen threatens the field (c,d)" << std::endl;
     }
     else
     {
-        std::cout << "Queen  doesn`t threatens the field (c,d)" << std::endl;
+        std::cout << "queen  doesn`t threatens the field (c,d)" << std::endl;
     }
     if (((b.first + 1 == c.first) && (b.second - 1 == c.second)) ||
         ((b.first - 1 == c.first) && (b.second + 1 == c.second)))
     {
-        std::cout << "Pawn eat the field (c,d)" << std::endl;
+        std::cout << "pawn eat the field (c,d)" << std::endl;
     }
     else if ((b.first == 2) && ((b.first == c.first) && (b.second + 2 == c.second)) ||
              (b.first == c.first) && (b.second + 1 ==c.second))
     {
-        std::cout << "Paw can go to the field (c,d)" << std::endl;
+        std::cout << "paw can go to the field (c,d)" << std::endl;
     }
     else
     {
-        std::cout << "Paw can go to the field (c,d)" << std::endl;
+        std::cout << "paw can go to the field (c,d)" << std::endl;
     }
     for (int i = 1; i <= 10; ++i)
     {
@@ -124,7 +124,7 @@ int main()
     }
     std::cout << count << std::endl;
     count = 1;
-    std::cout << "Enter a (1<a<20)" << std::endl;
+    std::cout << "enter a (1<a<20)" << std::endl;
     int a = 0;
     std::cin >> a;
     for (int k = a; k <= 20; ++k)
@@ -133,7 +133,7 @@ int main()
     }
     std::cout << count << std::endl;
     count = 1;
-    std::cout << "Enter b (1<b<20)" << std::endl;
+    std::cout << "enter b (1<b<20)" << std::endl;
     int numberB = 0;
     std::cin >> numberB;
     for (int t = 1; t <= numberB; ++t)
@@ -142,10 +142,10 @@ int main()
     }
     std::cout << count << std::endl;
     count = 1;
-    std::cout << "Enter a " << std::endl;
+    std::cout << "enter a " << std::endl;
     int firstborderA = 0;
     std::cin >> firstborderA;
-    std::cout << "Enter b (b>=a)" << std::endl;
+    std::cout << "enter b (b>=a)" << std::endl;
     int secondborderB = 0;
     std::cin >> secondborderB;
     for (int q = firstborderA; q <= secondborderB; ++q)
