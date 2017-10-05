@@ -1,5 +1,6 @@
+#include <cmath>
+#include <iomanip>
 #include <iostream>
-#include <math.h>
 
 int main()
 {
