@@ -2,104 +2,157 @@
 #include <math.h>
 
 int main()
+{
+    std::cout << "enter three numbers" << std::endl;
+    int numberK = 0;
+    int numberL = 0;
+    int numberM = 0;
+    std::cin >> numberK >> numberL >> numberM;
+    if ((numberK % 2 = 1) && (numberL % 2 = 1))
     {
-    // 1;
-    int x = 0;
-    int y = 0;
-    std::cout << "enter x and y" << std::endl;
-    std::cin >> x >> y;
-    if ((x%2 != 0) && (y%2 != 0))
-        {
         std::cout << " the condition is true " << std::endl;
-        }
+    }
     else
-        {
+    {
         std::cout << " the condition is false " << std::endl;
-        }
-    system ("pause");
-
-    // 2;
+    }
+    if (((numberK < 20) && (numberL >= 20)) ||
+        ((numberK >= 20) && (numberL < 20)))
+    {
+        std::cout << "the condition is true" << std::endl;
+    }
+    else
+    {
+        std::cout << "the condition is false" << std::endl;
+    }
+    if (numberK == 0 || numberL == 0)
+    {
+        std::cout << "the condition is true" << std::endl;
+    }
+    else
+    {
+        std::cout << "the condition is false" << std::endl;
+    }
+    if (numberK < 0 && numberL < 0 && numberM < 0)
+    {
+        std::cout << "the condition is true" << std::endl;
+    }
+    else
+    {
+        std::cout << "the condition is false" << std::endl;
+    }
+    if ((numberK %  5 == 0 && numberL % 5 != 0 && numberM != 0) ||
+        (numberK %  5 != 0 && numberL % 5 == 0 && numberM != 0) ||
+        (numberK %  5 != 0 && numberL % 5 != 0 && numberM == 0))
+    {
+        std::cout << "the condition is true" << std::endl;
+    }
+    else
+    {
+        std::cout << "the condition is false" << std::endl;
+    }
+    if (numberK > 100 || numberL > 100  ||  numberM > 100)
+    {
+        std::cout << "the condition is true" << std::endl;
+    }
+    else
+    {
+        std::cout << "the condition is false" << std::endl;
+    }
+    std::cout << "Enter a < 9 and b < 9" << std::endl;
+    std::pair<int, int> b;
+    std::cin >> b.first >> b.second;
+    std::cout << "Enter new pair c < 8 and d < 8" << std::endl;
+    std::pair<int, int> c;
+    std::cin >> c.first >> c.second;
+    if (b.first == c.first || b.second == c.second)
+    {
+        std::cout << "rook threatens the field (c,d)" << std::endl;
+    }
+    else
+    {
+        std::cout << "rook  doesn`t threatens the field (c,d)" << std::endl;
+    }
+    if (std::abs(b.first - c.first) == std::abs(b.second - c.second))
+    {
+        std::cout << "Elephant threatens the field (c,d)" << std::endl;
+    }
+    else
+    {
+        std::cout << "Elephant  doesn`t threatens the field (c,d)" << std::endl;
+    }
+    if (std::abs(b.first - c.first) ==  1 || std::abs(b.second - c.second) == 1)
+    {
+        std::cout << "King threatens the field (c,d)" << std::endl;
+    }
+    else
+    {
+        std::cout << "King  doesn`t threatens the field (c,d)" << std::endl;
+    }
+    if ((b.first == c.first) || (b.second == c.second) ||
+        (std::abs(b.first - c.first) == std::abs(b.second - c.second)))
+    {
+        std::cout << "Queen threatens the field (c,d)" << std::endl;
+    }
+    else
+    {
+        std::cout << "Queen  doesn`t threatens the field (c,d)" << std::endl;
+    }
+    if (((b.first + 1 == c.first) && (b.second - 1 == c.second)) ||
+        ((b.first - 1 == c.first) && (b.second + 1 == c.second)))
+    {
+        std::cout << "Pawn eat the field (c,d)" << std::endl;
+    }
+    else if ((b.first == 2) && ((b.first == c.first) && (b.second + 2 == c.second)) ||
+             (b.first == c.first) && (b.second + 1 ==c.second))
+    {
+        std::cout << "Paw can go to the field (c,d)" << std::endl;
+    }
+    else
+    {
+        std::cout << "Paw can go to the field (c,d)" << std::endl;
+    }
+    for (int i = 1; i <= 10; ++i)
+    {
+        std::cout << i << "*7 = " << 7*i << std::endl;
+    }
+    unsigned int count = 1;
+    for (int j = 8; j <= 15; ++j)
+    {
+    count = count * j;
+    }
+    std::cout << count << std::endl;
+    count = 1;
+    std::cout << "Enter a (1<a<20)" << std::endl;
     int a = 0;
-    int b = 0;
-    std::cout << "enter x and y" << std::endl;
-    std::cin >> a >> b;
-    if (((a>20) && (b<20)) || ((a<20) && (b>20)))
-        {
-        std::cout << " the condition is true " << std::endl;
-        }
-    else
-        {
-        std::cout << " the condition is false " << std::endl;
-        }
-
-    // 3;
-    int c = 0;
-    int d = 0;
-    std::cout << "enter x and y" << std::endl;
-    std::cin >> c >> d;
-    if ((c = 0) || (d = 0))
-        {
-        std::cout << " the condition is true " << std::endl;
-        }
-    else
-        {
-        std::cout << " the condition is false " << std::endl;
-        }
-
-    // 4;
-    int e = 0;
-    int f = 0;
-    int g = 0;
-    std::cout << "enter x, y and z" << std::endl;
-    std::cin >> e >> f >> g;
-    if ((e < 0) && (f < 0) && (g < 0))
-        {
-        std::cout << " the condition is true " << std::endl;
-        }
-    else
-        {
-        std::cout << " the condition is false " << std::endl;
-        }
-
-   // 5
-    int h = 0; 
-    int i = 0; 
-    int j = 0; 
-    std::cout << "enter x, y and z" << std::endl; 
-    std::cin >> h >> i >> j; 
-    if ((h % 5 == 0) && (i % 5 != 0) && (j % 5 != 0)) 
-        { 
-        std::cout << " the condition is true " << std::endl; 
-        } 
-    else if ((h%5 != 0) && (i%5 == 0) && (j%5 != 0)) 
-        { 
-        std::cout << " the condition is true " << std::endl; 
-        } 
-    else if ((h%5 != 0) && (i%5 != 0) && (j%5 == 0)) 
-
-        { 
-        std::cout << " the condition is true " << std::endl; 
-        } 
-    else 
-        { 
-        std::cout << " the condition is false " << std::endl; 
-        } 
-
-    // 6;
-    int k = 0;
-    int l = 0;
-    int m = 0;
-    std::cout << "enter x, y and z" << std::endl;
-    std::cin >> k >> l >> m;
-    if ((k > 100) || (l > 100) || (m > 100))
-        {
-        std::cout << " the condition is true " << std::endl;
-        }
-    else
-        {
-        std::cout << " the condition is false " << std::endl;
-        }
-
+    std::cin >> a;
+    for (int k = a; k <= 20; ++k)
+    {
+        count = count * k;
+    }
+    std::cout << count << std::endl;
+    count = 1;
+    std::cout << "Enter b (1<b<20)" << std::endl;
+    int numberB = 0;
+    std::cin >> numberB;
+    for (int t = 1; t <= numberB; ++t)
+    {
+         count = count * t;
+    }
+    std::cout << count << std::endl;
+    count = 1;
+    std::cout << "Enter a " << std::endl;
+    int firstborderA = 0;
+    std::cin >> firstborderA;
+    std::cout << "Enter b (b>=a)" << std::endl;
+    int secondborderB = 0;
+    std::cin >> secondborderB;
+    for (int q = firstborderA; q <= secondborderB; ++q)
+    {
+        count = count * q;
+    }
+    std::cout << count << std::endl;
+    return 0;
    
 
 }
